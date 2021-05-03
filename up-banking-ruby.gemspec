@@ -16,12 +16,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "openapi_client/version"
 
 Gem::Specification.new do |s|
-  s.name        = "openapi_client"
+  s.name        = "up-banking-ruby"
   s.version     = OpenapiClient::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI-Generator"]
   s.email       = [""]
-  s.homepage    = "https://openapi-generator.tech"
+  s.homepage    = "https://github.com/ben-gy/up-banking-ruby"
   s.summary     = "Up API Ruby Gem"
   s.description = "The Up API gives you programmatic access to your balances and transaction data. You can request past transactions or set up webhooks to receive real-time events when new transactions hit your account. It’s new, it’s exciting and it’s just the beginning. "
   s.license     = "Unlicense"
