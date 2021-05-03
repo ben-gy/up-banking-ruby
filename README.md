@@ -20,7 +20,7 @@ Any and all contributions welcome. You're welcome to submit issues/PRs anytime. 
 
 ## Installation
 
-### Install from RubyGems
+### Install from RubyGems (N/A)
 
 Add this to the Gemfile:
 
