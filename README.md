@@ -24,13 +24,13 @@ Any and all contributions welcome. You're welcome to submit issues/PRs anytime. 
 
 Add this to the Gemfile:
 
-    gem 'openapi_client', '~> 1.0.0'
+    gem 'up-banking-ruby', '~> 1.0.0'
 
 ### Install from Git
 
 Add this to the Gemfile:
 
-    gem 'openapi_client', git: 'https://github.com/ben-gy/up-banking-ruby.git'
+    gem 'up-banking-ruby', git: 'https://github.com/ben-gy/up-banking-ruby.git'
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ Please follow the [installation](#installation) procedure and then run the follo
 
 ```ruby
 # Load the gem
-require 'openapi_client'
+require 'up-banking-ruby'
 
 # Setup authorization
 OpenapiClient.configure do |config|
