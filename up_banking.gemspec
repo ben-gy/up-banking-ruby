@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Ben Richardson"]
   s.email       = [""]
-  s.homepage    = "https://github.com/ben-gy/up-banking"
+  s.homepage    = "https://github.com/ben-gy/up_banking"
   s.summary     = "Unofficial Ruby gem for the Up Banking API"
   s.description = "Unofficial Ruby gem for the Up Banking API"
   s.license     = "Unlicense"
