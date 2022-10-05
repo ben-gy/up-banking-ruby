@@ -1,4 +1,4 @@
-# OpenapiClient::UpdateTransactionTagsRequest
+# UpBankingClient::UpdateTransactionTagsRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::UpdateTransactionTagsRequest.new(
+instance = UpBankingClient::UpdateTransactionTagsRequest.new(
   data: null
 )
 ```

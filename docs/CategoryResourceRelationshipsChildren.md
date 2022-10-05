@@ -1,18 +1,18 @@
-# OpenapiClient::CategoryResourceRelationshipsChildren
+# UpBankingClient::CategoryResourceRelationshipsChildren
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**Array&lt;CategoryResourceRelationshipsChildrenData&gt;**](CategoryResourceRelationshipsChildrenData.md) |  |  |
+| **data** | [**Array&lt;CategoryResourceRelationshipsChildrenDataInner&gt;**](CategoryResourceRelationshipsChildrenDataInner.md) |  |  |
 | **links** | [**AccountResourceRelationshipsTransactionsLinks**](AccountResourceRelationshipsTransactionsLinks.md) |  | [optional] |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::CategoryResourceRelationshipsChildren.new(
+instance = UpBankingClient::CategoryResourceRelationshipsChildren.new(
   data: null,
   links: null
 )

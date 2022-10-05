@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookEventTypeEnum
+# UpBankingClient::WebhookEventTypeEnum
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::WebhookEventTypeEnum.new()
+instance = UpBankingClient::WebhookEventTypeEnum.new()
 ```
 

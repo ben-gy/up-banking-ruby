@@ -1,4 +1,4 @@
-# OpenapiClient::PingResponseMeta
+# UpBankingClient::PingResponseMeta
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::PingResponseMeta.new(
+instance = UpBankingClient::PingResponseMeta.new(
   id: null,
   status_emoji: null
 )

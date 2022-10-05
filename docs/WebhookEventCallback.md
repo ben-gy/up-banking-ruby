@@ -1,17 +1,17 @@
-# OpenapiClient::WebhookEventCallback
+# UpBankingClient::WebhookEventCallback
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**WebhookEventResource**](WebhookEventResource.md) | The webhook event data sent to the subscribed webhook.  |  |
+| **data** | [**WebhookEventCallbackData**](WebhookEventCallbackData.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::WebhookEventCallback.new(
+instance = UpBankingClient::WebhookEventCallback.new(
   data: null
 )
 ```

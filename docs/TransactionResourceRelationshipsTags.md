@@ -1,18 +1,18 @@
-# OpenapiClient::TransactionResourceRelationshipsTags
+# UpBankingClient::TransactionResourceRelationshipsTags
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**Array&lt;TransactionResourceRelationshipsTagsData&gt;**](TransactionResourceRelationshipsTagsData.md) |  |  |
+| **data** | [**Array&lt;TransactionResourceRelationshipsTagsDataInner&gt;**](TransactionResourceRelationshipsTagsDataInner.md) |  |  |
 | **links** | [**TransactionResourceRelationshipsTagsLinks**](TransactionResourceRelationshipsTagsLinks.md) |  | [optional] |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::TransactionResourceRelationshipsTags.new(
+instance = UpBankingClient::TransactionResourceRelationshipsTags.new(
   data: null,
   links: null
 )

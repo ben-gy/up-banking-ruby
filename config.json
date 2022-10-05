@@ -1,0 +1,11 @@
+{
+  "gemName": "UpBanking",
+  "gemAuthor": "Ben Richardson",
+  "gemDescription": "Unofficial Ruby gem for the Up Banking API",
+  "gemHomepage": "https://github.com/ben-gy/up-banking",
+  "gemName": "up_banking",
+  "gemSummary": "Unofficial Ruby gem for the Up Banking API",
+  "moduleName": "UpBankingClient"
+}
+
+// openapi-generator generate -i https://raw.githubusercontent.com/up-banking/api/master/v1/openapi.json -g ruby -o /Users/benrichardson/Code/up-banking-ruby/ -c /Users/benrichardson/Code/up-banking-ruby/config.json

@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookDeliveryStatusEnum
+# UpBankingClient::WebhookDeliveryStatusEnum
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::WebhookDeliveryStatusEnum.new()
+instance = UpBankingClient::WebhookDeliveryStatusEnum.new()
 ```
 

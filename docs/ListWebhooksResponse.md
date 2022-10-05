@@ -1,4 +1,4 @@
-# OpenapiClient::ListWebhooksResponse
+# UpBankingClient::ListWebhooksResponse
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::ListWebhooksResponse.new(
+instance = UpBankingClient::ListWebhooksResponse.new(
   data: null,
   links: null
 )

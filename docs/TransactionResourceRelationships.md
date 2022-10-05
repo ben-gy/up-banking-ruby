@@ -1,21 +1,23 @@
-# OpenapiClient::TransactionResourceRelationships
+# UpBankingClient::TransactionResourceRelationships
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **account** | [**TransactionResourceRelationshipsAccount**](TransactionResourceRelationshipsAccount.md) |  |  |
-| **category** | [**CategoryResourceRelationshipsParent**](CategoryResourceRelationshipsParent.md) |  |  |
+| **transfer_account** | [**TransactionResourceRelationshipsTransferAccount**](TransactionResourceRelationshipsTransferAccount.md) |  |  |
+| **category** | [**TransactionResourceRelationshipsCategory**](TransactionResourceRelationshipsCategory.md) |  |  |
 | **parent_category** | [**CategoryResourceRelationshipsParent**](CategoryResourceRelationshipsParent.md) |  |  |
 | **tags** | [**TransactionResourceRelationshipsTags**](TransactionResourceRelationshipsTags.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::TransactionResourceRelationships.new(
+instance = UpBankingClient::TransactionResourceRelationships.new(
   account: null,
+  transfer_account: null,
   category: null,
   parent_category: null,
   tags: null

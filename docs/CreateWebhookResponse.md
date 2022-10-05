@@ -1,17 +1,17 @@
-# OpenapiClient::CreateWebhookResponse
+# UpBankingClient::CreateWebhookResponse
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**WebhookResource**](WebhookResource.md) | The webhook that was created.  |  |
+| **data** | [**CreateWebhookResponseData**](CreateWebhookResponseData.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::CreateWebhookResponse.new(
+instance = UpBankingClient::CreateWebhookResponse.new(
   data: null
 )
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::TagResource
+# UpBankingClient::TagResource
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::TagResource.new(
+instance = UpBankingClient::TagResource.new(
   type: null,
   id: null,
   relationships: null

@@ -1,4 +1,4 @@
-# OpenapiClient::AccountTypeEnum
+# UpBankingClient::AccountTypeEnum
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::AccountTypeEnum.new()
+instance = UpBankingClient::AccountTypeEnum.new()
 ```
 

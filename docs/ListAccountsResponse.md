@@ -1,4 +1,4 @@
-# OpenapiClient::ListAccountsResponse
+# UpBankingClient::ListAccountsResponse
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::ListAccountsResponse.new(
+instance = UpBankingClient::ListAccountsResponse.new(
   data: null,
   links: null
 )

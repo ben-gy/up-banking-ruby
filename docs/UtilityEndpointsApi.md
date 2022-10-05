@@ -1,4 +1,4 @@
-# OpenapiClient::UtilityEndpointsApi
+# UpBankingClient::UtilityEndpointsApi
 
 All URIs are relative to *https://api.up.com.au/api/v1*
 
@@ -19,20 +19,20 @@ Make a basic ping request to the API. This is useful to verify that authenticati
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::UtilityEndpointsApi.new
+api_instance = UpBankingClient::UtilityEndpointsApi.new
 
 begin
   # Ping
   result = api_instance.util_ping_get
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling UtilityEndpointsApi->util_ping_get: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PingResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling UtilityEndpointsApi->util_ping_get_with_http_info: #{e}"
 end
 ```

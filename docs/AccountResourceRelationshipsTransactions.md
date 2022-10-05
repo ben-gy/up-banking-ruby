@@ -1,4 +1,4 @@
-# OpenapiClient::AccountResourceRelationshipsTransactions
+# UpBankingClient::AccountResourceRelationshipsTransactions
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::AccountResourceRelationshipsTransactions.new(
+instance = UpBankingClient::AccountResourceRelationshipsTransactions.new(
   links: null
 )
 ```

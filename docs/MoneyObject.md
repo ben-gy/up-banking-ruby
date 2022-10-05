@@ -1,4 +1,4 @@
-# OpenapiClient::MoneyObject
+# UpBankingClient::MoneyObject
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::MoneyObject.new(
+instance = UpBankingClient::MoneyObject.new(
   currency_code: null,
   value: null,
   value_in_base_units: null

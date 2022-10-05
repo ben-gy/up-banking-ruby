@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionStatusEnum
+# UpBankingClient::TransactionStatusEnum
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::TransactionStatusEnum.new()
+instance = UpBankingClient::TransactionStatusEnum.new()
 ```
 

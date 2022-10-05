@@ -1,4 +1,4 @@
-# OpenapiClient::CategoryResource
+# UpBankingClient::CategoryResource
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::CategoryResource.new(
+instance = UpBankingClient::CategoryResource.new(
   type: null,
   id: null,
   attributes: null,

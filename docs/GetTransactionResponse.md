@@ -1,17 +1,17 @@
-# OpenapiClient::GetTransactionResponse
+# UpBankingClient::GetTransactionResponse
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**TransactionResource**](TransactionResource.md) | The transaction returned in this response.  |  |
+| **data** | [**GetTransactionResponseData**](GetTransactionResponseData.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::GetTransactionResponse.new(
+instance = UpBankingClient::GetTransactionResponse.new(
   data: null
 )
 ```

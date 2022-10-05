@@ -1,17 +1,17 @@
-# OpenapiClient::GetCategoryResponse
+# UpBankingClient::GetCategoryResponse
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**CategoryResource**](CategoryResource.md) | The category returned in this response.  |  |
+| **data** | [**GetCategoryResponseData**](GetCategoryResponseData.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::GetCategoryResponse.new(
+instance = UpBankingClient::GetCategoryResponse.new(
   data: null
 )
 ```

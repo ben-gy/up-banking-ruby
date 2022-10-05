@@ -1,4 +1,4 @@
-# OpenapiClient::TransactionsApi
+# UpBankingClient::TransactionsApi
 
 All URIs are relative to *https://api.up.com.au/api/v1*
 
@@ -21,18 +21,18 @@ Retrieve a list of all transactions for a specific account. The returned list is
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
-account_id = '86150b64-feaa-4186-a7e4-e84eae764602' # String | The unique identifier for the account. 
+api_instance = UpBankingClient::TransactionsApi.new
+account_id = 'b5544658-4bbd-4eb1-8f63-a9909e0f564b' # String | The unique identifier for the account. 
 opts = {
   page_size: 30, # Integer | The number of records to return in each page. 
-  filter_status: OpenapiClient::TransactionStatusEnum::HELD, # TransactionStatusEnum | The transaction status for which to return records. This can be used to filter `HELD` transactions from those that are `SETTLED`. 
+  filter_status: UpBankingClient::TransactionStatusEnum::HELD, # TransactionStatusEnum | The transaction status for which to return records. This can be used to filter `HELD` transactions from those that are `SETTLED`. 
   filter_since: Time.parse('2020-01-01T01:02:03+10:00'), # Time | The start date-time from which to return records, formatted according to rfc-3339. Not to be used for pagination purposes. 
   filter_until: Time.parse('2020-02-01T01:02:03+10:00'), # Time | The end date-time up to which to return records, formatted according to rfc-3339. Not to be used for pagination purposes. 
   filter_category: 'good-life', # String | The category identifier for which to filter transactions. Both parent and child categories can be filtered through this parameter. Providing an invalid category identifier results in a `404` response. 
@@ -43,7 +43,7 @@ begin
   # List transactions by account
   result = api_instance.accounts_account_id_transactions_get(account_id, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->accounts_account_id_transactions_get: #{e}"
 end
 ```
@@ -61,7 +61,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListTransactionsResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->accounts_account_id_transactions_get_with_http_info: #{e}"
 end
 ```
@@ -104,17 +104,17 @@ Retrieve a list of all transactions across all accounts for the currently authen
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
+api_instance = UpBankingClient::TransactionsApi.new
 opts = {
   page_size: 30, # Integer | The number of records to return in each page. 
-  filter_status: OpenapiClient::TransactionStatusEnum::HELD, # TransactionStatusEnum | The transaction status for which to return records. This can be used to filter `HELD` transactions from those that are `SETTLED`. 
+  filter_status: UpBankingClient::TransactionStatusEnum::HELD, # TransactionStatusEnum | The transaction status for which to return records. This can be used to filter `HELD` transactions from those that are `SETTLED`. 
   filter_since: Time.parse('2020-01-01T01:02:03+10:00'), # Time | The start date-time from which to return records, formatted according to rfc-3339. Not to be used for pagination purposes. 
   filter_until: Time.parse('2020-02-01T01:02:03+10:00'), # Time | The end date-time up to which to return records, formatted according to rfc-3339. Not to be used for pagination purposes. 
   filter_category: 'good-life', # String | The category identifier for which to filter transactions. Both parent and child categories can be filtered through this parameter. Providing an invalid category identifier results in a `404` response. 
@@ -125,7 +125,7 @@ begin
   # List transactions
   result = api_instance.transactions_get(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_get: #{e}"
 end
 ```
@@ -143,7 +143,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListTransactionsResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_get_with_http_info: #{e}"
 end
 ```
@@ -185,21 +185,21 @@ Retrieve a specific transaction by providing its unique identifier.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TransactionsApi.new
-id = '8e1da97e-6490-42eb-9c18-d8fdd94cfddc' # String | The unique identifier for the transaction. 
+api_instance = UpBankingClient::TransactionsApi.new
+id = '7a9d19f9-106c-4e29-8591-52fc5d8f09c5' # String | The unique identifier for the transaction. 
 
 begin
   # Retrieve transaction
   result = api_instance.transactions_id_get(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_id_get: #{e}"
 end
 ```
@@ -217,7 +217,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetTransactionResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TransactionsApi->transactions_id_get_with_http_info: #{e}"
 end
 ```

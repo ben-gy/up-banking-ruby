@@ -1,4 +1,4 @@
-# OpenapiClient::AccountsApi
+# UpBankingClient::AccountsApi
 
 All URIs are relative to *https://api.up.com.au/api/v1*
 
@@ -20,23 +20,25 @@ Retrieve a paginated list of all accounts for the currently authenticated user. 
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
+api_instance = UpBankingClient::AccountsApi.new
 opts = {
-  page_size: 30 # Integer | The number of records to return in each page. 
+  page_size: 30, # Integer | The number of records to return in each page. 
+  filter_account_type: UpBankingClient::AccountTypeEnum::SAVER, # AccountTypeEnum | The type of account for which to return records. This can be used to filter Savers from spending accounts. 
+  filter_ownership_type: UpBankingClient::OwnershipTypeEnum::INDIVIDUAL # OwnershipTypeEnum | The account ownership structure for which to return records. This can be used to filter 2Up accounts from Up accounts. 
 }
 
 begin
   # List accounts
   result = api_instance.accounts_get(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_get: #{e}"
 end
 ```
@@ -54,7 +56,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAccountsResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_get_with_http_info: #{e}"
 end
 ```
@@ -64,6 +66,8 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **page_size** | **Integer** | The number of records to return in each page.  | [optional] |
+| **filter_account_type** | [**AccountTypeEnum**](.md) | The type of account for which to return records. This can be used to filter Savers from spending accounts.  | [optional] |
+| **filter_ownership_type** | [**OwnershipTypeEnum**](.md) | The account ownership structure for which to return records. This can be used to filter 2Up accounts from Up accounts.  | [optional] |
 
 ### Return type
 
@@ -91,21 +95,21 @@ Retrieve a specific account by providing its unique identifier.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::AccountsApi.new
-id = '9842e43e-a1f9-4460-a252-364c86df2d3e' # String | The unique identifier for the account. 
+api_instance = UpBankingClient::AccountsApi.new
+id = '92b41408-6b7b-4fca-982b-3fb1fdd77220' # String | The unique identifier for the account. 
 
 begin
   # Retrieve account
   result = api_instance.accounts_id_get(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_id_get: #{e}"
 end
 ```
@@ -123,7 +127,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetAccountResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling AccountsApi->accounts_id_get_with_http_info: #{e}"
 end
 ```

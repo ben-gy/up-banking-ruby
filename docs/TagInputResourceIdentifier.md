@@ -1,4 +1,4 @@
-# OpenapiClient::TagInputResourceIdentifier
+# UpBankingClient::TagInputResourceIdentifier
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::TagInputResourceIdentifier.new(
+instance = UpBankingClient::TagInputResourceIdentifier.new(
   type: null,
   id: null
 )

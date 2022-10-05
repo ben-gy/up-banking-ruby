@@ -1,4 +1,4 @@
-# OpenapiClient::ErrorObject
+# UpBankingClient::ErrorObject
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::ErrorObject.new(
+instance = UpBankingClient::ErrorObject.new(
   status: null,
   title: null,
   detail: null,

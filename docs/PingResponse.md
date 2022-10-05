@@ -1,4 +1,4 @@
-# OpenapiClient::PingResponse
+# UpBankingClient::PingResponse
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::PingResponse.new(
+instance = UpBankingClient::PingResponse.new(
   meta: null
 )
 ```

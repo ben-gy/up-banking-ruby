@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookEventResourceRelationships
+# UpBankingClient::WebhookEventResourceRelationships
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::WebhookEventResourceRelationships.new(
+instance = UpBankingClient::WebhookEventResourceRelationships.new(
   webhook: null,
   transaction: null
 )

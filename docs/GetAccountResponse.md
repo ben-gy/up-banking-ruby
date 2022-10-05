@@ -1,17 +1,17 @@
-# OpenapiClient::GetAccountResponse
+# UpBankingClient::GetAccountResponse
 
 ## Properties
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**AccountResource**](AccountResource.md) | The account returned in this response.  |  |
+| **data** | [**GetAccountResponseData**](GetAccountResponseData.md) |  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::GetAccountResponse.new(
+instance = UpBankingClient::GetAccountResponse.new(
   data: null
 )
 ```

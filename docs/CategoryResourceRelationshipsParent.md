@@ -1,4 +1,4 @@
-# OpenapiClient::CategoryResourceRelationshipsParent
+# UpBankingClient::CategoryResourceRelationshipsParent
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::CategoryResourceRelationshipsParent.new(
+instance = UpBankingClient::CategoryResourceRelationshipsParent.new(
   data: null,
   links: null
 )

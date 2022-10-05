@@ -1,4 +1,4 @@
-# OpenapiClient::AccountResourceAttributes
+# UpBankingClient::AccountResourceAttributes
 
 ## Properties
 
@@ -6,17 +6,19 @@
 | ---- | ---- | ----------- | ----- |
 | **display_name** | **String** | The name associated with the account in the Up application.  |  |
 | **account_type** | [**AccountTypeEnum**](AccountTypeEnum.md) | The bank account type of this account.  |  |
-| **balance** | [**MoneyObject**](MoneyObject.md) | The available balance of the account, taking into account any amounts that are currently on hold.  |  |
+| **ownership_type** | [**OwnershipTypeEnum**](OwnershipTypeEnum.md) | The ownership structure for this account.  |  |
+| **balance** | [**AccountResourceAttributesBalance**](AccountResourceAttributesBalance.md) |  |  |
 | **created_at** | **Time** | The date-time at which this account was first opened.  |  |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'up_banking'
 
-instance = OpenapiClient::AccountResourceAttributes.new(
+instance = UpBankingClient::AccountResourceAttributes.new(
   display_name: null,
   account_type: null,
+  ownership_type: null,
   balance: null,
   created_at: null
 )

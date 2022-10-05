@@ -1,4 +1,4 @@
-# OpenapiClient::TagsApi
+# UpBankingClient::TagsApi
 
 All URIs are relative to *https://api.up.com.au/api/v1*
 
@@ -21,14 +21,14 @@ Retrieve a list of all tags currently in use. The returned list is [paginated](#
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TagsApi.new
+api_instance = UpBankingClient::TagsApi.new
 opts = {
   page_size: 50 # Integer | The number of records to return in each page. 
 }
@@ -37,7 +37,7 @@ begin
   # List tags
   result = api_instance.tags_get(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->tags_get: #{e}"
 end
 ```
@@ -55,7 +55,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListTagsResponse>
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->tags_get_with_http_info: #{e}"
 end
 ```
@@ -92,23 +92,23 @@ Disassociates one or more tags from a specific transaction. Tags that are not as
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TagsApi.new
-transaction_id = 'd8c190d6-be35-4d64-b2c4-e1aa0c09a0e0' # String | The unique identifier for the transaction. 
+api_instance = UpBankingClient::TagsApi.new
+transaction_id = 'c3feb4ba-829c-4482-b882-1b9bd23da82d' # String | The unique identifier for the transaction. 
 opts = {
-  update_transaction_tags_request: OpenapiClient::UpdateTransactionTagsRequest.new({data: [OpenapiClient::TagInputResourceIdentifier.new({type: 'type_example', id: 'id_example'})]}) # UpdateTransactionTagsRequest | 
+  update_transaction_tags_request: UpBankingClient::UpdateTransactionTagsRequest.new({data: [UpBankingClient::TagInputResourceIdentifier.new({type: 'type_example', id: 'id_example'})]}) # UpdateTransactionTagsRequest | 
 }
 
 begin
   # Remove tags from transaction
   api_instance.transactions_transaction_id_relationships_tags_delete(transaction_id, opts)
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->transactions_transaction_id_relationships_tags_delete: #{e}"
 end
 ```
@@ -126,7 +126,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->transactions_transaction_id_relationships_tags_delete_with_http_info: #{e}"
 end
 ```
@@ -164,23 +164,23 @@ Associates one or more tags with a specific transaction. No more than 6 tags may
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'up_banking'
 # setup authorization
-OpenapiClient.configure do |config|
+UpBankingClient.configure do |config|
   # Configure Bearer authorization: bearer_auth
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = OpenapiClient::TagsApi.new
-transaction_id = 'd024c1b8-bc6a-4785-afc6-cd332d2a2efb' # String | The unique identifier for the transaction. 
+api_instance = UpBankingClient::TagsApi.new
+transaction_id = 'acde4631-db56-49a6-aea3-4e2311ef1d6a' # String | The unique identifier for the transaction. 
 opts = {
-  update_transaction_tags_request: OpenapiClient::UpdateTransactionTagsRequest.new({data: [OpenapiClient::TagInputResourceIdentifier.new({type: 'type_example', id: 'id_example'})]}) # UpdateTransactionTagsRequest | 
+  update_transaction_tags_request: UpBankingClient::UpdateTransactionTagsRequest.new({data: [UpBankingClient::TagInputResourceIdentifier.new({type: 'type_example', id: 'id_example'})]}) # UpdateTransactionTagsRequest | 
 }
 
 begin
   # Add tags to transaction
   api_instance.transactions_transaction_id_relationships_tags_post(transaction_id, opts)
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->transactions_transaction_id_relationships_tags_post: #{e}"
 end
 ```
@@ -198,7 +198,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue UpBankingClient::ApiError => e
   puts "Error when calling TagsApi->transactions_transaction_id_relationships_tags_post_with_http_info: #{e}"
 end
 ```
